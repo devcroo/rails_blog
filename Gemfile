@@ -11,6 +11,7 @@ gem 'bluecloth'
 gem 'bootstrap-sass'
 gem 'breadcrumbs_on_rails'
 gem 'protected_attributes'
+gem 'rails_12factor', group: :production
 
 
 # Use SCSS for stylesheets
