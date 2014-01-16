@@ -1,0 +1,10 @@
+<div id="footer" class="container">
+        <hr>
+        <footer style="float:left; display: inline;">&copy; Devcroo 2013.</footer>
+        <footer style="float:right; display: inline;"><%= link_to "License", license_path %> | <a href="#" class="">Cookie Policy</a>
+        </footer><br><br>
+        
+        <!-- Renders the debug information if in the development environment -->
+        <%= debug(params) if Rails.env.development? %>
+    </div>
+    <br>

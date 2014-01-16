@@ -1,6 +1,10 @@
 BlogApp::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/license"
+  
+  # ROOT
+  root "static_pages#home"
+
+  # STATIC PAGES
+  get "license" => "static_pages#license"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
