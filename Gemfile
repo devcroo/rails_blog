@@ -7,12 +7,26 @@ gem 'rails', '4.0.2'
 gem 'pg'
 
 # Put custom gems here:
+
+# Use thin in both development and production
+gem 'thin'
+
 gem 'bluecloth'
 gem 'bootstrap-sass'
 gem 'breadcrumbs_on_rails'
 gem 'protected_attributes'
 gem 'rails_12factor', group: :production
 
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'meta_request' # there's an awesome Chrome extension for monitoring Rails.
+end
+
+group :test do
+  gem 'capybara'
+  gem 'selenium-webdriver'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
